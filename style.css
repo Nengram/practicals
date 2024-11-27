@@ -1,0 +1,248 @@
+body, html {
+    margin: 0;
+    padding: 0;
+        font-family: Arial, sans-serif;}
+
+        /*nav section*/
+        nav {
+            background-color: rgb(230, 246, 3);
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        /*nav menu*/
+
+        nav .menu {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav .menu a {
+            color: #050505ec;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        nav .menu a:hover {
+            background-color: #bec1b4;
+            border-radius: 8px;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+        }
+
+        /* Grid Layout Styling */
+        .grid-container {
+            display: grid;
+            gap: 20px;
+            padding: 100px 20px 20px;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .card {
+            background-color:transparent;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+
+            .title {
+                display: flex;
+                color: #054bed;
+                
+            }
+
+            .menu {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color:#decd0f;
+                position: absolute;
+                top: 50px;
+                left: 0;
+            }
+
+            .menu.active {
+                display: flex;
+            }
+
+            .menu a {
+                padding: 15px 0;
+                text-align: center;
+            }
+        }
+        .title{
+            font-size: large;
+            color: #010308;
+            font-weight: 400;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .o{
+            padding-top: 330px;
+
+        }
+        .t{
+            padding-top: 240px;
+        }
+        .tw{
+            padding-top: 150px;
+        }
+        /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navigation Section */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: darkturquoise;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar .logo {
+    font-size: 1.5rem;
+  }
+  
+  .navbar .nav-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .navbar .nav-links li {
+    list-style: none;
+  }
+  
+  .navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 0.3rem;
+  }
+  
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color:rgb(230, 246, 3);
+  }
+  
+  /* Mobile Hamburger Menu */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+    }
+    .hamburger {
+      display: flex;
+    }
+  }
+  
+  /* Grid Layout Section */
+  .grid-section {
+    margin: 6rem 2rem 2rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .grid-section{
+    max-width: 100%;
+    
+  }
+
+  h1{
+    text-align: center;
+  }
+  
+  /* Table Section */
+  .table-section {
+    margin: 2rem;
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+  }
+  
+  table thead {
+    background-color: rgb(230, 246, 3);
+  }
+  
+  table th,
+  table td {
+    border: 1px solid #ccc;
+    padding: 0.8rem;
+    text-align: left;
+  }
+  .fp{
+    text-align: center;
+    font-weight: 800;
+  }
+    
+  h6{
+    text-align: center;
+  }
+  
+  
+  
